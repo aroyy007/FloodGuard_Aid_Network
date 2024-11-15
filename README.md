@@ -22,7 +22,7 @@ FloodGuard Aid Network is a web-based application designed to assist flood-affec
 - **Dashboard**: Shows statistics on aid distribution, active volunteers, and pending requests.
 
 ## Technologies Used
-- **Frontend**: React, TypeScript, Tailwind CSS, Leaflet (for maps)
+- **Frontend**: React, TypeScript, Tailwind CSS
 - **APIs**:
   - Google Maps API for location and map markers
   - OpenWeatherMap API for weather and alert data
@@ -62,8 +62,9 @@ FloodGuard Aid Network is a web-based application designed to assist flood-affec
    Make sure to set up the following environment variables in your ```.env``` file:
 
    ```plaintext
-   REACT_APP_GOOGLE_MAPS_API_KEY=<Your Google Maps API Key>
-   REACT_APP_OPENWEATHER_API_KEY=<Your OpenWeatherMap API Key>
+    MONGO_DB_URL=<Your MongoDB URL>
+    PORT=3000
+    VITE_GOOGLE_MAPS_API=<Your Google Maps API>
    ```
 
 ## Project Structure
@@ -74,6 +75,8 @@ FloodGuard Aid Network is a web-based application designed to assist flood-affec
    │   ├── components/     # UI components (e.g., Map, Dashboard)
    │   ├── pages/          # Main pages (Home, Volunteer, Victim)
    │   ├── styles/         # CSS and styling files
+   │   ├── hooks/          # Custom Hooks
+   │   ├── types/          # Typescript Types
    │   ├── App.tsx         # Root component
    │   └── index.tsx       # Entry point
    ├── .env                # Environment variables
